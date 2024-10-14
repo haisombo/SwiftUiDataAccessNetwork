@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8323B5592CBCBBCE009E1466 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8323B5582CBCBBCE009E1466 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		8323B5232CBCB8F6009E1466 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,20 +33,41 @@
 		8323B52C2CBCB8F6009E1466 /* SwiftUiDataAccessNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUiDataAccessNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8323B5622CBCBE0C009E1466 /* Exceptions for "SwiftUiDataAccessNetworkTests" folder in "SwiftUiDataAccessNetwork" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SwiftUiDataAccessNetworkTests.swift,
+			);
+			target = 8323B5112CBCB8F4009E1466 /* SwiftUiDataAccessNetwork */;
+		};
+		8323B5632CBCBE0C009E1466 /* Exceptions for "SwiftUiDataAccessNetworkTests" folder in "SwiftUiDataAccessNetworkTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SwiftUiDataAccessNetworkTests.swift,
+			);
+			target = 8323B5212CBCB8F6009E1466 /* SwiftUiDataAccessNetworkTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8323B5142CBCB8F4009E1466 /* SwiftUiDataAccessNetwork */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SwiftUiDataAccessNetwork;
 			sourceTree = "<group>";
 		};
-		8323B5252CBCB8F6009E1466 /* SwiftUiDataAccessNetworkTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUiDataAccessNetworkTests;
-			sourceTree = "<group>";
-		};
 		8323B52F2CBCB8F6009E1466 /* SwiftUiDataAccessNetworkUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SwiftUiDataAccessNetworkUITests;
+			sourceTree = "<group>";
+		};
+		8323B5602CBCBE0C009E1466 /* SwiftUiDataAccessNetworkTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8323B5622CBCBE0C009E1466 /* Exceptions for "SwiftUiDataAccessNetworkTests" folder in "SwiftUiDataAccessNetwork" target */,
+				8323B5632CBCBE0C009E1466 /* Exceptions for "SwiftUiDataAccessNetworkTests" folder in "SwiftUiDataAccessNetworkTests" target */,
+			);
+			path = SwiftUiDataAccessNetworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8323B5592CBCBBCE009E1466 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				8323B5142CBCB8F4009E1466 /* SwiftUiDataAccessNetwork */,
-				8323B5252CBCB8F6009E1466 /* SwiftUiDataAccessNetworkTests */,
+				8323B5602CBCBE0C009E1466 /* SwiftUiDataAccessNetworkTests */,
 				8323B52F2CBCB8F6009E1466 /* SwiftUiDataAccessNetworkUITests */,
 				8323B5132CBCB8F4009E1466 /* Products */,
 			);
@@ -109,9 +135,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				8323B5142CBCB8F4009E1466 /* SwiftUiDataAccessNetwork */,
+				8323B5602CBCBE0C009E1466 /* SwiftUiDataAccessNetworkTests */,
 			);
 			name = SwiftUiDataAccessNetwork;
 			packageProductDependencies = (
+				8323B5582CBCBBCE009E1466 /* Alamofire */,
 			);
 			productName = SwiftUiDataAccessNetwork;
 			productReference = 8323B5122CBCB8F4009E1466 /* SwiftUiDataAccessNetwork.app */;
@@ -129,9 +157,6 @@
 			);
 			dependencies = (
 				8323B5242CBCB8F6009E1466 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				8323B5252CBCB8F6009E1466 /* SwiftUiDataAccessNetworkTests */,
 			);
 			name = SwiftUiDataAccessNetworkTests;
 			packageProductDependencies = (
@@ -195,6 +220,9 @@
 			);
 			mainGroup = 8323B5092CBCB8F4009E1466;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8323B5572CBCBBCE009E1466 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8323B5132CBCB8F4009E1466 /* Products */;
 			projectDirPath = "";
@@ -404,6 +432,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,6 +440,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosign.hdexpenseTest.SwiftUiDataAccessNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +474,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kosign.hdexpenseTest.SwiftUiDataAccessNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,6 +596,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8323B5572CBCBBCE009E1466 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8323B5582CBCBBCE009E1466 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8323B5572CBCBBCE009E1466 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8323B50A2CBCB8F4009E1466 /* Project object */;
 }
